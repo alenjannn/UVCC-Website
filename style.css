@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navigation Bar */
+header {
+    position: sticky;
+    top: 0;
+    /* backdrop-filter: blur(20px);    blur */
+}
+
+
+
+.navbar {
+    background: transparent;
+    background: rgba(220, 20, 60, 0.7);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px 150px;
+}
+
+.navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+}
+
+li { 
+    list-style: none;   /* removing bullets */
+    display: inline-block;
+}
+
+li a{
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 35px;     /* space between the options */
+}
+
+nav a:hover,
+nav a.active {
+    color:darkorange;
+}
+
+/* Sections */
+section {
+    min-height: 100vh;      /* perfect for screen height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:bisque;
+    font-size: 100px;
+    color: white;
+    font-weight: 700;
+}
+
+section:nth-child(odd) {
+    background-color: burlywood;
+}
